@@ -22,32 +22,32 @@ class __TwigTemplate_5a0e804c34a71ecff3ac9e3f26a6f12aaf793bd8c4f5156a67531972d18
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_03e44b31e994ae2246c4c60b229e39fed3c0aac2b4dd0935aca428d5693bc8e0 = $this->env->getExtension("native_profiler");
-        $__internal_03e44b31e994ae2246c4c60b229e39fed3c0aac2b4dd0935aca428d5693bc8e0->enter($__internal_03e44b31e994ae2246c4c60b229e39fed3c0aac2b4dd0935aca428d5693bc8e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Page:contact.html.twig"));
+        $__internal_5880e99e1edd4237d4f5ae58b390c05affde3b10fdae3d1f07bfe9df740f2ea6 = $this->env->getExtension("native_profiler");
+        $__internal_5880e99e1edd4237d4f5ae58b390c05affde3b10fdae3d1f07bfe9df740f2ea6->enter($__internal_5880e99e1edd4237d4f5ae58b390c05affde3b10fdae3d1f07bfe9df740f2ea6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Page:contact.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_03e44b31e994ae2246c4c60b229e39fed3c0aac2b4dd0935aca428d5693bc8e0->leave($__internal_03e44b31e994ae2246c4c60b229e39fed3c0aac2b4dd0935aca428d5693bc8e0_prof);
+        $__internal_5880e99e1edd4237d4f5ae58b390c05affde3b10fdae3d1f07bfe9df740f2ea6->leave($__internal_5880e99e1edd4237d4f5ae58b390c05affde3b10fdae3d1f07bfe9df740f2ea6_prof);
 
     }
 
     // line 4
     public function block_title($context, array $blocks = array())
     {
-        $__internal_70882e6c6488c6a9613ebe51197d8bf7a6bcfe8b178f597ac954f409262891d0 = $this->env->getExtension("native_profiler");
-        $__internal_70882e6c6488c6a9613ebe51197d8bf7a6bcfe8b178f597ac954f409262891d0->enter($__internal_70882e6c6488c6a9613ebe51197d8bf7a6bcfe8b178f597ac954f409262891d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_453a090627a927a0e9743c9fcc4f44907ec5c1043995c0e6bb72c9aafe28dc4f = $this->env->getExtension("native_profiler");
+        $__internal_453a090627a927a0e9743c9fcc4f44907ec5c1043995c0e6bb72c9aafe28dc4f->enter($__internal_453a090627a927a0e9743c9fcc4f44907ec5c1043995c0e6bb72c9aafe28dc4f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Contact";
         
-        $__internal_70882e6c6488c6a9613ebe51197d8bf7a6bcfe8b178f597ac954f409262891d0->leave($__internal_70882e6c6488c6a9613ebe51197d8bf7a6bcfe8b178f597ac954f409262891d0_prof);
+        $__internal_453a090627a927a0e9743c9fcc4f44907ec5c1043995c0e6bb72c9aafe28dc4f->leave($__internal_453a090627a927a0e9743c9fcc4f44907ec5c1043995c0e6bb72c9aafe28dc4f_prof);
 
     }
 
     // line 6
     public function block_body($context, array $blocks = array())
     {
-        $__internal_db2c94006c19c2af5a971410045f0425ddbeec3db64fabdd51ce1cc955cd9dbc = $this->env->getExtension("native_profiler");
-        $__internal_db2c94006c19c2af5a971410045f0425ddbeec3db64fabdd51ce1cc955cd9dbc->enter($__internal_db2c94006c19c2af5a971410045f0425ddbeec3db64fabdd51ce1cc955cd9dbc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_0044f3d279ac02a9ae0ed9756bb2d4d5097c8525bd268aad6d4e232b2e9e85b4 = $this->env->getExtension("native_profiler");
+        $__internal_0044f3d279ac02a9ae0ed9756bb2d4d5097c8525bd268aad6d4e232b2e9e85b4->enter($__internal_0044f3d279ac02a9ae0ed9756bb2d4d5097c8525bd268aad6d4e232b2e9e85b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
         echo "    <header>
@@ -55,9 +55,45 @@ class __TwigTemplate_5a0e804c34a71ecff3ac9e3f26a6f12aaf793bd8c4f5156a67531972d18
     </header>
 
     <p>Want to contact symblog?</p>
+
+    <form action=\"";
+        // line 13
+        echo $this->env->getExtension('routing')->getPath("BloggerBlogBundle_contact");
+        echo "\" method=\"post\" ";
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'enctype');
+        echo " class=\"blogger\">
+        ";
+        // line 14
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'errors');
+        echo "
+
+        ";
+        // line 16
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "name", array()), 'row');
+        echo "
+        ";
+        // line 17
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'row');
+        echo "
+        ";
+        // line 18
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "subject", array()), 'row');
+        echo "
+        ";
+        // line 19
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "body", array()), 'row');
+        echo "
+
+        ";
+        // line 21
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'rest');
+        echo "
+
+        <input type=\"submit\" value=\"Submit\" />
+    </form>
 ";
         
-        $__internal_db2c94006c19c2af5a971410045f0425ddbeec3db64fabdd51ce1cc955cd9dbc->leave($__internal_db2c94006c19c2af5a971410045f0425ddbeec3db64fabdd51ce1cc955cd9dbc_prof);
+        $__internal_0044f3d279ac02a9ae0ed9756bb2d4d5097c8525bd268aad6d4e232b2e9e85b4->leave($__internal_0044f3d279ac02a9ae0ed9756bb2d4d5097c8525bd268aad6d4e232b2e9e85b4_prof);
 
     }
 
@@ -73,7 +109,7 @@ class __TwigTemplate_5a0e804c34a71ecff3ac9e3f26a6f12aaf793bd8c4f5156a67531972d18
 
     public function getDebugInfo()
     {
-        return array (  53 => 7,  47 => 6,  35 => 4,  11 => 2,);
+        return array (  89 => 21,  84 => 19,  80 => 18,  76 => 17,  72 => 16,  67 => 14,  61 => 13,  53 => 7,  47 => 6,  35 => 4,  11 => 2,);
     }
 }
 /* {# src/Blogger/BlogBundle/Resources/views/Page/contact.html.twig #}*/
@@ -87,5 +123,18 @@ class __TwigTemplate_5a0e804c34a71ecff3ac9e3f26a6f12aaf793bd8c4f5156a67531972d18
 /*     </header>*/
 /* */
 /*     <p>Want to contact symblog?</p>*/
+/* */
+/*     <form action="{{ path('BloggerBlogBundle_contact') }}" method="post" {{ form_enctype(form) }} class="blogger">*/
+/*         {{ form_errors(form) }}*/
+/* */
+/*         {{ form_row(form.name) }}*/
+/*         {{ form_row(form.email) }}*/
+/*         {{ form_row(form.subject) }}*/
+/*         {{ form_row(form.body) }}*/
+/* */
+/*         {{ form_rest(form) }}*/
+/* */
+/*         <input type="submit" value="Submit" />*/
+/*     </form>*/
 /* {% endblock %}*/
 /* */

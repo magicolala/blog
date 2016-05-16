@@ -12,3 +12,9 @@ e00a3d,::1,GET,http://localhost/blogger/web/app_dev.php/hello/C%C3%A9dric,146339
 fbed92,::1,GET,http://localhost/blogger/web/app_dev.php/about,1463400825,,200
 87a033,::1,GET,http://localhost/blogger/web/app_dev.php/about,1463401495,,200
 d43f26,::1,GET,http://localhost/blogger/web/app_dev.php/contact,1463401497,,200
+279f90,::1,GET,http://localhost/blogger/web/app_dev.php/contact,1463402980,380a0a,200
+380a0a,::1,GET,http://localhost/blogger/web/app_dev.php/contact,1463402980,,500
+38901d,::1,GET,http://localhost/blogger/web/app_dev.php/contact,1463403835,fda3f3,200
+fda3f3,::1,GET,http://localhost/blogger/web/app_dev.php/contact,1463403835,,500
+2b08b6,::1,GET,http://localhost/blogger/web/app_dev.php/contact,1463403906,,200
+462c3a,::1,GET,http://localhost/blogger/web/app_dev.php/contact,1463404336,,200
