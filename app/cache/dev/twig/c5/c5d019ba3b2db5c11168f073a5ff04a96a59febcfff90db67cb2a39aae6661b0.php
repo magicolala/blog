@@ -22,32 +22,32 @@ class __TwigTemplate_e3ea52727032b5e1b87a17bc8810a738899afda7a15c0e463ffe0d377e9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6ab29fa96a12fb0cb89f9ee4a8217322a20bdb6e209a16ace9a6cccc8a007bcf = $this->env->getExtension("native_profiler");
-        $__internal_6ab29fa96a12fb0cb89f9ee4a8217322a20bdb6e209a16ace9a6cccc8a007bcf->enter($__internal_6ab29fa96a12fb0cb89f9ee4a8217322a20bdb6e209a16ace9a6cccc8a007bcf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Page/contact.html.twig"));
+        $__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4 = $this->env->getExtension("native_profiler");
+        $__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4->enter($__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Page/contact.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_6ab29fa96a12fb0cb89f9ee4a8217322a20bdb6e209a16ace9a6cccc8a007bcf->leave($__internal_6ab29fa96a12fb0cb89f9ee4a8217322a20bdb6e209a16ace9a6cccc8a007bcf_prof);
+        $__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4->leave($__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4_prof);
 
     }
 
     // line 4
     public function block_title($context, array $blocks = array())
     {
-        $__internal_332f9e2dbc32bd012c489eb3d1c2492a77ddf5b0525d68ab38422092479ff6f8 = $this->env->getExtension("native_profiler");
-        $__internal_332f9e2dbc32bd012c489eb3d1c2492a77ddf5b0525d68ab38422092479ff6f8->enter($__internal_332f9e2dbc32bd012c489eb3d1c2492a77ddf5b0525d68ab38422092479ff6f8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d = $this->env->getExtension("native_profiler");
+        $__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d->enter($__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Contact";
         
-        $__internal_332f9e2dbc32bd012c489eb3d1c2492a77ddf5b0525d68ab38422092479ff6f8->leave($__internal_332f9e2dbc32bd012c489eb3d1c2492a77ddf5b0525d68ab38422092479ff6f8_prof);
+        $__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d->leave($__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d_prof);
 
     }
 
     // line 6
     public function block_body($context, array $blocks = array())
     {
-        $__internal_441253bf0d45aa9eac0ab7ae66487825343376d4f13cf73bc9df7441131dd93e = $this->env->getExtension("native_profiler");
-        $__internal_441253bf0d45aa9eac0ab7ae66487825343376d4f13cf73bc9df7441131dd93e->enter($__internal_441253bf0d45aa9eac0ab7ae66487825343376d4f13cf73bc9df7441131dd93e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9 = $this->env->getExtension("native_profiler");
+        $__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9->enter($__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
         echo "    <header>
@@ -56,16 +56,21 @@ class __TwigTemplate_e3ea52727032b5e1b87a17bc8810a738899afda7a15c0e463ffe0d377e9
 
     ";
         // line 11
-        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "hasFlash", array(0 => "blogger-notice"), "method")) {
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashbag", array()), "get", array(0 => "blogger-notice"), "method"));
+        foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
             // line 12
             echo "    <div class=\"blogger-notice\">
         ";
             // line 13
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flash", array(0 => "blogger-notice"), "method"), "html", null, true);
+            echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
             echo "
     </div>
     ";
         }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
         // line 16
         echo "
     <p>Want to contact symblog?</p>
@@ -107,7 +112,7 @@ class __TwigTemplate_e3ea52727032b5e1b87a17bc8810a738899afda7a15c0e463ffe0d377e9
     </form>
 ";
         
-        $__internal_441253bf0d45aa9eac0ab7ae66487825343376d4f13cf73bc9df7441131dd93e->leave($__internal_441253bf0d45aa9eac0ab7ae66487825343376d4f13cf73bc9df7441131dd93e_prof);
+        $__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9->leave($__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9_prof);
 
     }
 
@@ -123,7 +128,7 @@ class __TwigTemplate_e3ea52727032b5e1b87a17bc8810a738899afda7a15c0e463ffe0d377e9
 
     public function getDebugInfo()
     {
-        return array (  103 => 27,  98 => 25,  94 => 24,  90 => 23,  86 => 22,  81 => 20,  75 => 19,  70 => 16,  64 => 13,  61 => 12,  59 => 11,  53 => 7,  47 => 6,  35 => 4,  11 => 2,);
+        return array (  108 => 27,  103 => 25,  99 => 24,  95 => 23,  91 => 22,  86 => 20,  80 => 19,  75 => 16,  66 => 13,  63 => 12,  59 => 11,  53 => 7,  47 => 6,  35 => 4,  11 => 2,);
     }
 }
 /* {# src/Blogger/BlogBundle/Resources/views/Page/contact.html.twig #}*/
@@ -136,11 +141,11 @@ class __TwigTemplate_e3ea52727032b5e1b87a17bc8810a738899afda7a15c0e463ffe0d377e9
 /*     <h1>Contact symblog</h1>*/
 /*     </header>*/
 /* */
-/*     {% if app.session.hasFlash('blogger-notice') %}*/
+/*     {% for flashMessage in app.session.flashbag.get('blogger-notice') %}*/
 /*     <div class="blogger-notice">*/
-/*         {{ app.session.flash('blogger-notice') }}*/
+/*         {{ flashMessage }}*/
 /*     </div>*/
-/*     {% endif %}*/
+/*     {% endfor %}*/
 /* */
 /*     <p>Want to contact symblog?</p>*/
 /* */
