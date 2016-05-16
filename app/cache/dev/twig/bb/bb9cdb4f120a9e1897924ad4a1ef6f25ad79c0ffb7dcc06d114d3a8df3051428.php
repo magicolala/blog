@@ -15,15 +15,15 @@ class __TwigTemplate_caf00109a1e80f7d5772198e68841413b35ba045e7ee84af60f42fe7b2f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9dbb81d1b77c6bac2bcd964fec7ff4ff32357b891bc574c6c5702fbbe56b6c9f = $this->env->getExtension("native_profiler");
-        $__internal_9dbb81d1b77c6bac2bcd964fec7ff4ff32357b891bc574c6c5702fbbe56b6c9f->enter($__internal_9dbb81d1b77c6bac2bcd964fec7ff4ff32357b891bc574c6c5702fbbe56b6c9f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:error.json.twig"));
+        $__internal_de361c1aac35f4761d9e55aa4e4890e923a43c0eb2970e42771266b082f2b2cb = $this->env->getExtension("native_profiler");
+        $__internal_de361c1aac35f4761d9e55aa4e4890e923a43c0eb2970e42771266b082f2b2cb->enter($__internal_de361c1aac35f4761d9e55aa4e4890e923a43c0eb2970e42771266b082f2b2cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:error.json.twig"));
 
         // line 1
         echo twig_jsonencode_filter(array("error" => array("code" => (isset($context["status_code"]) ? $context["status_code"] : $this->getContext($context, "status_code")), "message" => (isset($context["status_text"]) ? $context["status_text"] : $this->getContext($context, "status_text")))));
         echo "
 ";
         
-        $__internal_9dbb81d1b77c6bac2bcd964fec7ff4ff32357b891bc574c6c5702fbbe56b6c9f->leave($__internal_9dbb81d1b77c6bac2bcd964fec7ff4ff32357b891bc574c6c5702fbbe56b6c9f_prof);
+        $__internal_de361c1aac35f4761d9e55aa4e4890e923a43c0eb2970e42771266b082f2b2cb->leave($__internal_de361c1aac35f4761d9e55aa4e4890e923a43c0eb2970e42771266b082f2b2cb_prof);
 
     }
 
