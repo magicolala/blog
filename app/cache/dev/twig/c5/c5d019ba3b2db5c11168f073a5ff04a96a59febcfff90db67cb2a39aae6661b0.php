@@ -22,32 +22,32 @@ class __TwigTemplate_e3ea52727032b5e1b87a17bc8810a738899afda7a15c0e463ffe0d377e9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4 = $this->env->getExtension("native_profiler");
-        $__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4->enter($__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Page/contact.html.twig"));
+        $__internal_bf90bda43ca04c43a0be9cc7731107bdcb101c2ba5a4493a48799416d15aaeac = $this->env->getExtension("native_profiler");
+        $__internal_bf90bda43ca04c43a0be9cc7731107bdcb101c2ba5a4493a48799416d15aaeac->enter($__internal_bf90bda43ca04c43a0be9cc7731107bdcb101c2ba5a4493a48799416d15aaeac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@BloggerBlog/Page/contact.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4->leave($__internal_8fe6e0088bc768124b79ca5aa7432f82eed701906e890bf0b731a3a90ca2e1a4_prof);
+        $__internal_bf90bda43ca04c43a0be9cc7731107bdcb101c2ba5a4493a48799416d15aaeac->leave($__internal_bf90bda43ca04c43a0be9cc7731107bdcb101c2ba5a4493a48799416d15aaeac_prof);
 
     }
 
     // line 4
     public function block_title($context, array $blocks = array())
     {
-        $__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d = $this->env->getExtension("native_profiler");
-        $__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d->enter($__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_90e290bc1f2c6d7359269bce1469bfc3416086c5794203548c7c545c66a22f0a = $this->env->getExtension("native_profiler");
+        $__internal_90e290bc1f2c6d7359269bce1469bfc3416086c5794203548c7c545c66a22f0a->enter($__internal_90e290bc1f2c6d7359269bce1469bfc3416086c5794203548c7c545c66a22f0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Contact";
         
-        $__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d->leave($__internal_5a5a90153b02870928ad9aed28b9abf5f0da763b27eddde8992b203ef004c07d_prof);
+        $__internal_90e290bc1f2c6d7359269bce1469bfc3416086c5794203548c7c545c66a22f0a->leave($__internal_90e290bc1f2c6d7359269bce1469bfc3416086c5794203548c7c545c66a22f0a_prof);
 
     }
 
     // line 6
     public function block_body($context, array $blocks = array())
     {
-        $__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9 = $this->env->getExtension("native_profiler");
-        $__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9->enter($__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f0ca7188cb24e61ba72b4103d445836efbceba272fccbdd398b42cfe4ce69006 = $this->env->getExtension("native_profiler");
+        $__internal_f0ca7188cb24e61ba72b4103d445836efbceba272fccbdd398b42cfe4ce69006->enter($__internal_f0ca7188cb24e61ba72b4103d445836efbceba272fccbdd398b42cfe4ce69006_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
         echo "    <header>
@@ -112,7 +112,7 @@ class __TwigTemplate_e3ea52727032b5e1b87a17bc8810a738899afda7a15c0e463ffe0d377e9
     </form>
 ";
         
-        $__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9->leave($__internal_1966769c498e1c17ce70b04b9d24f6d5d0600f011e5942ad7005152f106199c9_prof);
+        $__internal_f0ca7188cb24e61ba72b4103d445836efbceba272fccbdd398b42cfe4ce69006->leave($__internal_f0ca7188cb24e61ba72b4103d445836efbceba272fccbdd398b42cfe4ce69006_prof);
 
     }
 
